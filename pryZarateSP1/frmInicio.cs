@@ -16,5 +16,9 @@ namespace pryZarateSP1
         {
             InitializeComponent();
         }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

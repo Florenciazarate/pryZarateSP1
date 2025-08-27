@@ -61,7 +61,6 @@
             lblUsuario.Size = new Size(63, 19);
             lblUsuario.TabIndex = 2;
             lblUsuario.Text = "Usuario";
-            lblUsuario.Click += label1_Click;
             // 
             // lblContraseña
             // 
@@ -83,6 +82,7 @@
             btnAceptar.TabIndex = 4;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnCancelar
             // 
