@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryZarateSP1
 {
-    public partial class frmPrincipal : Form
+    public partial class frmLogin : Form
     {
-        public frmPrincipal()
+        public frmLogin()
         {
             InitializeComponent();
         }
