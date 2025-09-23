@@ -76,6 +76,7 @@
             // btnAceptar
             // 
             btnAceptar.BackColor = Color.Tan;
+            btnAceptar.BackgroundImageLayout = ImageLayout.None;
             btnAceptar.Font = new Font("Yu Gothic", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAceptar.Location = new Point(119, 155);
             btnAceptar.Name = "btnAceptar";
@@ -96,6 +97,7 @@
             btnCancelar.TabIndex = 5;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click_1;
             // 
             // frmLogin
             // 
@@ -109,6 +111,7 @@
             Controls.Add(lblUsuario);
             Controls.Add(txtContraseña);
             Controls.Add(txtUsuario);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;

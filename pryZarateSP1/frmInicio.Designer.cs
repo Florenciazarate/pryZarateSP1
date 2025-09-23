@@ -63,10 +63,12 @@
             ClientSize = new Size(504, 281);
             Controls.Add(lbl1);
             Controls.Add(btn1);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "frmInicio";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Bienvenido";
+            Load += frmInicio_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -75,5 +77,6 @@
 
         private Button btn1;
         private Label lbl1;
+        private ToolStripMenuItem bienvenidoToolStripMenuItem;
     }
 }
