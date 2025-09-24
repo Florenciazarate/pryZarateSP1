@@ -17,17 +17,33 @@ namespace pryZarateSP1
             InitializeComponent();
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            frmInicio ventanaInicio = new frmInicio();
-            ventanaInicio.ShowDialog();
-        }
 
+
+    int intentos = 0;
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            frmInicio ventanaInicio = new frmInicio();
-            ventanaInicio.ShowDialog();
+            if ((txtUsuario.Text == "Administrador" &&
+            txtContraseña.Text == "adm135$") ||
+            (txtUsuario.Text == "Operador" &&
+            txtContraseña.Text == "ope246$"))
+            {
+                this.Hide();
+                frmInicio f = new frmInicio(); 
+                f.Text = txtUsuario.Text; 
+                f.ShowDialog(); 
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Datos incorrectos. Acceso Denegado.");
+                intentos++; 
+                if (intentos == 3) 
+                {
+                    this.Close();
+                }
+            }
         }
+     
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
