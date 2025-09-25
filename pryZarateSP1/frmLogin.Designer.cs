@@ -50,6 +50,7 @@
             txtContraseña.BackColor = Color.AntiqueWhite;
             txtContraseña.Location = new Point(201, 83);
             txtContraseña.Name = "txtContraseña";
+            txtContraseña.PasswordChar = '*';
             txtContraseña.Size = new Size(100, 23);
             txtContraseña.TabIndex = 1;
             // 

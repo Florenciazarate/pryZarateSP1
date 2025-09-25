@@ -19,7 +19,7 @@ namespace pryZarateSP1
 
 
 
-    int intentos = 0;
+        int intentos = 0;
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             if ((txtUsuario.Text == "Administrador" &&
@@ -28,26 +28,28 @@ namespace pryZarateSP1
             txtContraseña.Text == "ope246$"))
             {
                 this.Hide();
-                frmInicio f = new frmInicio(); 
-                f.Text = txtUsuario.Text; 
-                f.ShowDialog(); 
+                frmInicio f = new frmInicio();
+                f.Text = txtUsuario.Text;
+                f.ShowDialog();
                 this.Show();
             }
             else
             {
                 MessageBox.Show("Datos incorrectos. Acceso Denegado.");
-                intentos++; 
-                if (intentos == 3) 
+                intentos++;
+                if (intentos == 3)
                 {
                     this.Close();
                 }
             }
         }
-     
+
 
         private void btnCancelar_Click_1(object sender, EventArgs e)
         {
             this.Close();
         }
+
+
     }
 }
